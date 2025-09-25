@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テトリス５</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">テトリス５</h1>
+        <div class="game-content">
+            <div class="game-info">
+                <div class="score-info">
+                    <div>スコア: <span id="score">0</span></div>
+                    <div>レベル: <span id="level">1</span></div>
+                    <div>ライン: <span id="lines">0</span></div>
+                </div>
+                <div class="next-piece">
+                    <h3>次のピース</h3>
+                    <canvas id="next-canvas" width="80" height="80"></canvas>
+                </div>
+                <div class="controls">
+                    <h3>操作方法</h3>
+                    <p>←→: 移動</p>
+                    <p>↑: 回転</p>
+                    <p>↓: 落下加速</p>
+                    <p>スペース: ハードドロップ</p>
+                    <p>P: 一時停止</p>
+                </div>
+                <button id="start-btn">開始</button>
+                <button id="pause-btn">一時停止</button>
+                <button id="restart-btn">リスタート</button>
+            </div>
+            <div class="game-board">
+                <canvas id="game-canvas" width="300" height="600"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
