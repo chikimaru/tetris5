@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2025-09-25
+
+### 🎨 Title Styling Enhancement
+
+#### Added - タイトルデザインの大幅強化
+- **多層グラデーション効果**: 4色の金色系グラデーション + オレンジ系バックグラデーション
+- **発光エフェクト**: 3段階の重層的グロー効果 (10px, 20px, 30px)
+- **動的アニメーション**: 3秒間のシマーアニメーション + 微細スケール変化
+- **プレミアムフォント**: Impact/Arial Black による力強い印象
+- **立体効果**: 疑似要素による影レイヤー + 2px オフセット
+- **文字装飾**: 3px文字間隔 + 大文字変換で洗練された表示
+
+#### Technical Details
+- **CSS Animation**: `@keyframes shimmer` による流動的グラデーション
+- **Text Effects**: `-webkit-background-clip: text` によるグラデーション文字
+- **Layer System**: `::before` 疑似要素による多層構造
+- **Performance**: GPU加速による滑らかなアニメーション
+
 ## [1.1.0] - 2025-09-25
 
 ### ✨ Major UX/UI Enhancement Update

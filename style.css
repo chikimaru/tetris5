@@ -24,9 +24,49 @@ body {
 .game-title {
     text-align: center;
     margin: 0;
-    font-size: 2.5em;
-    color: #ffd700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 3em;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ffd700, #ffea00, #fff200, #ffd700);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow:
+        0 0 10px rgba(255, 215, 0, 0.8),
+        0 0 20px rgba(255, 215, 0, 0.6),
+        0 0 30px rgba(255, 215, 0, 0.4),
+        2px 2px 4px rgba(0, 0, 0, 0.8);
+    animation: shimmer 3s ease-in-out infinite;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.game-title::before {
+    content: 'テトリス５';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: -1;
+    transform: translate(2px, 2px);
+    opacity: 0.3;
+}
+
+@keyframes shimmer {
+    0%, 100% {
+        background-position: 0% 50%;
+        transform: scale(1);
+    }
+    50% {
+        background-position: 100% 50%;
+        transform: scale(1.02);
+    }
 }
 
 .game-content {
